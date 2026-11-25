@@ -11,3 +11,5 @@ minimumReleaseAgeExclude:
   - rollup
   - next
   - "@next/*"
+packages:
+  - "."
