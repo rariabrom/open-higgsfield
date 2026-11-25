@@ -1,3 +1,4 @@
+
 {
   "name": "openhiggsfield-ai",
   "private": true,
@@ -6,11 +7,14 @@
     "dev": "next dev --port 3000",
     "build": "next build",
     "start": "next start",
-    "brand": "node scripts/build-brand-assets.mjs"
+    "brand": "node scripts/build-brand-assets.mjs",
+    "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
+    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy"
   },
   "dependencies": {
     "@tanstack/react-virtual": "^3.14.10",
     "@vercel/blob": "^2.8.0",
+    "@opennextjs/cloudflare": "^1.20.18",
     "next": "^16.0.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
@@ -20,6 +24,7 @@
     "@types/node": "^22.10.2",
     "@types/react": "^19.2.0",
     "@types/react-dom": "^19.2.0",
-    "typescript": "^5.9.2"
+    "typescript": "^5.9.2",
+    "wrangler": "^4.168.0"
   }
 }
